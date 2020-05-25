@@ -1,0 +1,26 @@
+<html>
+
+<body>
+<script>
+var page=["summer.html","summer_comp.html","summer1.html"]
+  function ge(page){
+    return page[Math.floor(Math.random()*page.length)];
+  }
+  var lo = this.innerHTML= ge(page);
+ 
+var pag=["summer.html","summer_comp.html","summer_coffee.html","summer1.html"]
+  function gea(pag){
+    return pag[Math.floor(Math.random()*pag.length)];
+  }
+  var loa = this.innerHTML = gea(pag);
+
+    if (navigator.appVersion.indexOf("Win") != -1){
+      window.location.href = lo;
+    }
+    if (navigator.appVersion.indexOf("Linux") != -1){
+      window.location.href= lo
+    }
+    else{
+      window.location.href = loa;
+    }    
+</script>
