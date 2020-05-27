@@ -1,5 +1,3 @@
-  const summer = new Artyom();
-
   var commandHello = {
     indexes:["hello","hey","hi"],
     action:function(){
@@ -173,35 +171,3 @@
   ];
 
   summer.addCommands(wish);
-
-function startContinuousArtyom(){
-    summer.fatality();
-
-    setTimeout(function(){
-         summer.initialize({
-            lang:"en-GB",
-            continuous:true,
-            listen:true,
-            debug:true,
-            speed:0.9,
-        }).then(function(){
-            console.log("waiting for input");
-        },250);
-    });
-};
-
-  summer.redirectRecognizedTextOutput(function(text,isFinal){
-    var span = document.getElementById('result');
-
-    if(isFinal){
-      span.innerHTML = '';
-    }
-    else {
-      span.innerHTML = text;
-    }
-  });
-
-
-  function stopArtyom(){
-    summer.fatality();
-  }

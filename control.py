@@ -1,8 +1,27 @@
 import RPi.GPIO as gpio
 
+from flask import Flask, request, render_template, url_for
+
 gpio.setmode(gpio.BCM)
 
 import time
+
+##########################
+#Flask work
+app = (__name__)
+
+@app.route('/', methods= ["POST", "GET"])
+def index():
+  if request.method =='POST':
+    char = request.form['command']
+  else:
+    return render_template("pyth.html")
+
+if __name__="__main__":
+  app.run(debug=True)
+
+
+#########################
 
 gpio.setwarnings(False)
 
@@ -97,8 +116,6 @@ while True:
 # Keyboard character retrieval method. This method will save
 
 # the pressed key into the variable char
-
-  char = raw_input()
 
 
   if(char == "w"):
