@@ -12,9 +12,9 @@ div{
     font-size: large;
 }
 
-td, a{
+td{
     text-align: center;
-    color:rgba(255,250,250.0.9);
+    color:rgba(0,0,255,0.9);
 }
 a.col{
     color: rgba(200,140,140,0.9);
