@@ -1,0 +1,51 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>
+  window.alert("You chose to add commands");
+  </script>
+  <style>
+  body{
+    font-size: 30px;
+    font-style: oblique;
+    color: lightgrey;
+    text-align: center;
+  }
+  input{
+    background: rgba(10,10,10,0.7);
+    color: #F1F1F1;
+    width:60%;
+    height:30px;
+    border-radius:10px;
+    padding: 1px;
+  }
+  input:active{
+    transform: scale(1.1);
+  }
+  .sub{
+    width: 70px;
+    height:30px;
+    border-radius:30%;
+  }
+  input:hover{
+    border-color: white;
+  }
+  </style>
+</head>
+
+<body>
+
+  <i><font color="Blue">Please fill in the form below to add a command:</font></i><br>
+  <br><form action="mailto:developertoshith@gmail.com" method="post" name="form">
+    <b>Command  :<input type="text" name="command"  /><br><br>
+    Reply     : <input type="text" name="rep" /><br><br>
+    E-mail:   <input type="text" name="email" /></b><br>
+    <input type="submit" onclick="func()" class="sub">
+  </form>
+  <script>
+  function func(){
+    window.alert("Thank You for your response");
+  }
+  </script>
+</body>
+</html>

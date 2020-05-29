@@ -1,81 +1,14 @@
 <html>
 
-
-<head>
-
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link rel="stylesheet" type="text/css" href="main.css">
-
-    <script src = "artyom.js"></script>
-
-    <script src = "artyom.window.min.js"></script>
-
-    <script src= "config.js"></script>
-
-<script>
-  var hour = new Date().getHours();
-  var wish;
-  if(hour < 12){
-    wish = "Good Morning";
-  }else if(hour==12){
-    wish = "Good noon";
-  }else if(hour < 16){
-    wish = "Good Afternoon";
-  }else if(hour >= 16){
-    wish = "Good Evening"
-  }
-  summer.say(wish);
-  window.setTimeout(summer.say("I welcome you on the behalf of Toshith"),550);
-</script>
-
-</head>
-
-
-
 <body>
-
-
-<u><h1 id="heading">Hi!</u><br></h1></body>
+  <p id="id"></p>
 <script>
-  var head_txt = " I'm Toshith";
-  var t = 0;
-  function head(){
-    document.getElementById("heading").innerHTML += head_txt.charAt(t);
-    t++;
-    setTimeout(head, 250);  
-  }
-  window.setTimeout(head, 800);
-</script>
-<br>
-<div>
-    I have been into web designing since my class 8th i.e, since 2016, and have been working with the raspberry pi since 2018.<br>
-    I have participated in a few competitions as well like the Race-O-Bots and also made a hacking car for model making competition<br>
-    which was later displayed in a school exhibition as well.A few of my projects which are publicly available are on my github<br><br>
-    You can directly go to the pages as well:<br>
-    <br><img src="prof.jpg" width=300 height=399>
-    <table style="width:60%">
-        <tr>
-        <th>Project</th>
-        <th>Description</th>
-        <th>File</th>
-        </tr>
-        <tr>
-        <td><a href="">Summer AI</a></td>
-        <td>It is an artificially intelligent program inspired by jarvis.<br>It can also be used for voice automation and controlling <br>survelliance bots made with raspberry pi using<br>Rpio.voice</td>
-        <td><a href>GitHub</a> <br><a href>Website</a> </td>
-        </tr>
-        <tr>
-        <td>Rpio.Voice</td>
-        <td>It is a web app that can be used to control the gpio pins of <br>raspberry pi with php</td>
-        <td><a href>GitHub</a></td>
-        </tr>
-        <br>
-        <tr>
-        <td>Packet capturing and network monitoring<br>script for kali pi</td>
-        <td>It sets the wifi card of kali pi on monitor mode and uses ettercap<br>These are only .sh scripts</td>
-        <td><a href>GitHub</a></td>
-    </table>
-</div>
 
-</html>
+    if (navigator.appVersion.indexOf("Win") > -1){
+      window.location.href="big_screen.html";
+    }else if(navigator.appVersion.indexOf("Linux") > -1){
+      window.location.href="big_screen.html";
+    }else if(navigator.appVersion.indexOf("android") > -1){
+      window.location.href="lil_screen.html";
+    }    
+</script>

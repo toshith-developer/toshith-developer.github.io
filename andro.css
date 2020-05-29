@@ -1,0 +1,37 @@
+body{
+    font-style: italic;
+    background-attachment: fixed;
+    background-image: url("andro.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:rgba(240,240,250,1);
+}
+div{
+    color:rgba(255,255,255,0.9);
+    font-size: large;
+}
+table{
+    color: rgba(200,140,140,0.8);
+}
+td{
+    text-align: center;
+}
+a{
+    color: rgba(200,140,140,0.9);
+}
+th:hover{
+    transform: scale(1.1);
+}
+td:hover{
+    transform: scale(1.1);
+}
+th{
+    font-size: x-large;
+    color:rgba(155,155,155,1)
+}
+table, th, td {
+    padding: 10px;
+}
+a:hover{
+    transform: scale(1.1);
+}
