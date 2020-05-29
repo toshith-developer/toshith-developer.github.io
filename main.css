@@ -1,0 +1,40 @@
+body{
+    font-style: italic;
+    background-image: url("background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: rgba(240,240,250,0.7);
+}
+div{
+    color:rgba(255,255,255,0.9);
+    font-size: large;
+}
+table{
+    color:rgba(255,255,255,0.9);
+}
+td{
+    text-align: center;
+}
+a{
+    color: rgba(240,240,250,0.9);
+}
+th:hover{
+    transform: scale(1.1);
+}
+td:hover{
+    transform: scale(1.1);
+}
+th{
+    font-size: x-large;
+    color:rgba(255,255,255,0.5)
+}
+table, th, td {
+    padding: 10px;
+}
+img{
+    float: right;
+    background-position: center;
+    background-attachment: fixed;
+    padding-right: 3%;
+}
