@@ -14,6 +14,7 @@ div{
 
 h1{
     color:rgba(255,0,0,0.9);
+    font-weight: bolder;
 }
 
 td, a{
@@ -31,7 +32,8 @@ td:hover{
 }
 th{
     font-size: x-large;
-    color:rgba(155,155,155,1)
+    color:rgba(155,155,155,1);
+    font-weight: bold;
 }
 table, th, td {
     padding: 10px;
@@ -41,4 +43,7 @@ a:hover{
 }
 img{
     float: left;
+}
+font{
+    color: rgb(0,191,255);
 }
