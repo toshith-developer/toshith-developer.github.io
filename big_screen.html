@@ -17,7 +17,14 @@
 
     <script>
     $(document).ready(function(){
-      $("#div1").fadeIn(2000);
+      $('#button').click(function(){
+        $('div').slideDown(3500);
+      });  
+    });
+    </script>
+    <script>
+    $(document).ready(function(){
+      $('h1').fadeIn(1000);
     });
     </script>
 
@@ -46,7 +53,7 @@
 <body>
 
 
-<u><h1 id="heading">Hi!</u><br></h1></body>
+<u><h1 id="heading" style="display: none;">Hi!</u><br></h1></body>
 <script>
   var head_txt = " I'm Toshith";
   var t = 0;
@@ -56,13 +63,18 @@
     setTimeout(head, 250);  
   }
   window.setTimeout(head, 800);
+  function clic(){
+    document.getElementById("button").click();
+  }
+  window.setTimeout(clic,1000)
 </script>
 <br>
-<div class="div1">
+<div style="display:none">
     I have been into web designing since my class 8th i.e, since 2016, and have been working with the raspberry pi since 2018.<br>
     I have participated in a few competitions as well like the Race-O-Bots and also made a hacking car for model making competition<br>
     which was later displayed in a school exhibition as well.A few of my projects which are publicly available are on my github<br><br>
-    You can directly go to the pages as well:<br>
+    You can directly go to the pages as well:<br></div>
+    <div style="display: none;">
     <br><img src="prof.jpg" width=300 height=399>
     <table style="width:60%">
         <tr>
@@ -87,5 +99,6 @@
         <td><a href="https://github.com/toshith-developer/developer-toshith/tree/master/Kali%20pi">GitHub</a></td>
     </table>
 </div>
+<button id='button' class="button" style="color:rgba(0,0,0,0);background-color: rgba(0,0,0,0);border: none;"></button>
 
 </html>
