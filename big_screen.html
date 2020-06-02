@@ -7,11 +7,19 @@
 
     <link rel="stylesheet" type="text/css" href="main.css">
 
-    <script src = "artyom.js"></script>
+    <script src = "script/artyom.js"></script>
 
-    <script src = "artyom.window.min.js"></script>
+    <script src = "script/artyom.window.min.js"></script>
 
-    <script src= "config.js"></script>
+    <script src= "script/config.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+    $(document).ready(function(){
+      $("#div1").fadeIn(2000);
+    });
+    </script>
 
 <script>
   var hour = new Date().getHours();
@@ -27,7 +35,6 @@
   }
   summer.say(wish);
   window.setTimeout(summer.say("I welcome you on the behalf of Toshith"),550);
-  document.getElementById("title").value = wish;
   </script>
 
 <title id="title">Website</title>
@@ -51,7 +58,7 @@
   window.setTimeout(head, 800);
 </script>
 <br>
-<div>
+<div class="div1">
     I have been into web designing since my class 8th i.e, since 2016, and have been working with the raspberry pi since 2018.<br>
     I have participated in a few competitions as well like the Race-O-Bots and also made a hacking car for model making competition<br>
     which was later displayed in a school exhibition as well.A few of my projects which are publicly available are on my github<br><br>
